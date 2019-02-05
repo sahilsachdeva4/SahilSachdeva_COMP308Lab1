@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}		
+		td, th {
+			border: hidden;
+			text-align: center;
+			padding: 8px;
+		}
+	</style>
+	<body>
+		<form method="POST">
+			<table>
+				<tr>
+					<td>
+						Feedback Page
+					</td>
+				</tr>
+				<tr>
+					<td>
+						First Name&nbsp;:&nbsp;<input type="text" size="100" placeholder="Enter your first name" name="firstname">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Last Name&nbsp;:&nbsp;<input type="text" size="100" placeholder="Enter your last name" name="lastname">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Email&nbsp;:&nbsp;<input disabled type="email" value=<%= emailInSession %> size="100" name="email">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Feedback&nbsp;:&nbsp;<textarea rows="4" cols="50"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Mobile&nbsp;:&nbsp<input type="tel" maxlength="10">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Preffered Mode of Contact&nbsp;:&nbsp;<input type="radio" name="contactmode" value="email" checked>Email
+						<input type="radio" name="contactmode" value="mobile">Mobile<br>
+					</td>
+				</tr>
+				<tr>
+					<td> 
+						<input style="width:65%; background-color: darkgreen; color: white;" type="submit" value="SUBMIT" name="submit"><br>
+						<input style="width:65%; background-color: maroon; color: white;" type="reset" value="RESET">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
